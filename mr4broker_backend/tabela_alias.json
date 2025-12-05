@@ -1,0 +1,110 @@
+[
+  {
+    "termo": "Shipper",
+    "alias": ["SHIPPERS", "SHIPPER/VENDOR", "Exportador", "embarcador", "remetente", "Exporter", "Consignor", "Sender", "Expedidor"]
+  },
+  {
+    "termo": "Date",
+    "alias": ["Issued Date", "Issued Date:", "Date"]
+  },
+  {
+    "termo": "Consignee",
+    "alias": ["Consignee", "Consignatário", "Consignee / Notify", "Consignatario", "importador", "destinatário", "Importer", "Receiver"]
+  },
+  {
+    "termo": "Notify",
+    "alias": ["Notify", "Notifying Party", "Notify Party", "Notificar", "Agent", "Agente de notificação"]
+  },
+  {
+    "termo": "Invoice",
+    "alias": ["Invoice", "Invoice No", "Invoice No:", "Fatura", "Commercial Invoice"]
+  },
+  {
+    "termo": "P.O n",
+    "alias": ["Purchase Order", "Purchase Order:", "Pedido de Compra", "Order Number"]
+  },
+  {
+    "termo": "Terms of Payment",
+    "alias": ["Payment Terms", "Payment Terms:", "Condições de pagamento"]
+  },
+  {
+    "termo": "Bill of Lading",
+    "alias": ["Bill of Lading", "B/L", "Waybill", "House Bill of Lading (HBL)", "Master Bill of Lading (MBL)"]
+  },
+  {
+  "termo": "Vessel/Voyage No.",
+  "alias": ["Vessel / Voyage", "Vessel/Voyage", "Ship / Voyage", "Vessel Voyage", "Voyage No.", "Navio / Viagem"]
+  },
+  {
+    "termo": "Sailing Dated",
+    "alias": ["Sailing Dated"]
+  },
+  {
+    "termo": "Shipping Company",
+    "alias": ["Carrier", "Shipping Line", "Freight Forwarder", "transportadora"]
+  },
+  {
+    "termo": "Currency",
+    "alias": ["Currency", "Currency Type", "moeda"]
+  },
+  {
+    "termo": "Port of Loading",
+    "alias": ["Port of Loading", "Port of loading:", "Porto de embarque", "Port of Lading", "Departure Port"]
+  },
+  {
+    "termo": "Port of Discharge",
+    "alias": ["Port of Discharge", "Port of discharge:", "Porto de descarga", "Destination Port", "Port of Destination"]
+  },
+  {
+    "termo": "Place of Delivery",
+    "alias": ["Place of Delivery", "Final Destination", "Delivery Location"]
+  },
+  {
+    "termo": "Container",
+    "alias": ["Container", "Containers nº", "Containers n", "contêiner"]
+  },
+  {
+    "termo": "Tare",
+    "alias": ["Tare", "Tara", "Tare Weight", "Empty Weight"]
+  },
+  {
+    "termo": "Seal",
+    "alias": ["Seal", "Lacre"]
+  },
+  {
+    "termo": "Description of Goods",
+    "alias": ["Description of Goods", "Description of Goods:", "Descrição da mercadoria", "Cargo Description", "Product Description"]
+  },
+  {
+    "termo": "NCM",
+    "alias": ["NCM", "NCM Code", "HS Code", "Commodity Code"]
+  },
+  {
+    "termo": "Marks And Numbers",
+    "alias": ["Marks And Numbers", "Marks and Nos.", "Marcas e números"]
+  },
+  {
+    "termo": "No. of Packages",
+    "alias": ["No. of Packages", "Qty", "Quantity", "Quantidade de volumes"]
+  },
+  {
+    "termo": "Gross Weight",
+    "alias": ["Gross Weight", "Gross Weight:", "Peso bruto", "Total Weight"]
+  },
+  {
+    "termo": "Net Weight",
+    "alias": ["Net Weight", "Net Weight:", "Peso líquido"]
+  },
+  {
+    "termo": "Measurement",
+    "alias": ["Measurement", "CBM", "M³", "Actual m3"]
+  },
+  {
+    "termo": "Type of Freight",
+    "alias": ["Type of Freight", "Incoterm", "Incoterm:", "Tipo de frete", "Mode of Transport"]
+  },
+  {
+    "termo": "Total Price",
+    "alias": ["Total Price", "TOTAL FOB", "TOTAL CFR", "Preço"]
+  }
+]
