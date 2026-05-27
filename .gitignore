@@ -1,29 +1,44 @@
-# Logs
-logs
-*.log
+# Node.js
+node_modules/
+dist/
+dist-ssr/
+*.local
 npm-debug.log*
 yarn-debug.log*
 yarn-error.log*
 pnpm-debug.log*
-lerna-debug.log*
 
-node_modules
-dist
-dist-ssr
-*.local
-
-# Editor directories and files
-.vscode/*
-!.vscode/extensions.json
-.idea
-.DS_Store
-*.suo
-*.ntvs*
-*.njsproj
-*.sln
-*.sw?
-
-# Python virtual environment
+# Python
 venv/
 .venv/
 __pycache__/
+.pytest_cache/
+*.pyc
+*.pyo
+*.pyd
+
+# Environment
+.env
+
+# Database
+*.db
+
+# OS
+.DS_Store
+Thumbs.db
+
+# Logs
+*.log
+backend/logs/*
+!backend/logs/.gitkeep
+
+# App Specific
+.ollama/
+uploads/*
+!uploads/.gitkeep
+pdfs/*
+!pdfs/.gitkeep
+backend/uploads/*
+!backend/uploads/.gitkeep
+backend/templates/*
+!backend/templates/.gitkeep

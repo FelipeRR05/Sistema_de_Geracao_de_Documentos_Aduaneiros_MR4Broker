@@ -1,0 +1,100 @@
+[
+  {
+    "termo": "Invoice Number",
+    "tipo": "string",
+    "descricao": "Número de identificação da fatura comercial",
+    "alias": ["Invoice No.", "Fatura nº", "Factura nro", "Commercial Invoice No.", "Invoice #"]
+  },
+  {
+    "termo": "Invoice Date",
+    "tipo": "date",
+    "descricao": "Data de emissão da fatura (Formato esperado: YYYY-MM-DD)",
+    "alias": ["Date of Issue", "Data de emissão", "Fecha de emisión", "Billing Date"]
+  },
+  {
+    "termo": "Shipper",
+    "tipo": "string",
+    "descricao": "Dados completos do exportador/remetente",
+    "alias": ["Exportador", "embarcador", "Exporter", "Consignor", "Sender", "Expedidor"]
+  },
+  {
+    "termo": "Consignee",
+    "tipo": "string",
+    "descricao": "Dados do importador/destinatário final",
+    "alias": ["Consignatário", "importador", "Importer", "Receiver", "Addressee"]
+  },
+  {
+    "termo": "Notify Party",
+    "tipo": "string",
+    "descricao": "Parte a ser notificada na chegada da carga",
+    "alias": ["Notify", "Agente de notificação", "Notifying Party", "Notificar"]
+  },
+  {
+    "termo": "Incoterm",
+    "tipo": "string",
+    "descricao": "Termo internacional de comércio (Ex: FOB, CIF, EXW)",
+    "alias": ["Terms of Delivery", "Condição de venda", "Delivery Terms", "Incoterms 2020"]
+  },
+  {
+    "termo": "Currency",
+    "tipo": "string",
+    "descricao": "Moeda da transação (Ex: USD, EUR, BRL)",
+    "alias": ["Moeda", "Moneda", "Transaction Currency", "Payment Currency"]
+  },
+  {
+    "termo": "Port of Loading",
+    "tipo": "string",
+    "descricao": "Porto onde a mercadoria foi embarcada",
+    "alias": ["Porto de embarque", "Departure Port", "Loading Point", "Puerto de carga"]
+  },
+  {
+    "termo": "Port of Discharge",
+    "tipo": "string",
+    "descricao": "Porto onde a mercadoria será descarregada",
+    "alias": ["Porto de descarga", "Destination Port", "Discharging Port", "Puerto de destino"]
+  },
+  {
+    "termo": "NCM / HS Code",
+    "tipo": "string",
+    "descricao": "Classificação fiscal da mercadoria (8 dígitos ou mais)",
+    "alias": ["Nomenclatura Comum", "HS Code", "Harmonized System", "Commodity Code", "Código de Mercancía"]
+  },
+  {
+    "termo": "Gross Weight",
+    "tipo": "number",
+    "unidade": "KG",
+    "descricao": "Peso bruto total incluindo embalagem",
+    "alias": ["Peso bruto", "G.W.", "Total Weight", "Gross Mass"]
+  },
+  {
+    "termo": "Net Weight",
+    "tipo": "number",
+    "unidade": "KG",
+    "descricao": "Peso líquido da mercadoria",
+    "alias": ["Peso líquido", "N.W.", "Net Mass", "Peso neto"]
+  },
+  {
+    "termo": "Container Number",
+    "tipo": "string",
+    "descricao": "Identificação única do contêiner (Ex: ABCD1234567)",
+    "alias": ["Contêiner nº", "Equipamento", "Container No.", "CNTR No."]
+  },
+  {
+    "termo": "Seal Number",
+    "tipo": "string",
+    "descricao": "Número do lacre do contêiner",
+    "alias": ["Lacre nº", "Seal No.", "Container Seal", "Seal Number"]
+  },
+  {
+    "termo": "Country of Origin",
+    "tipo": "string",
+    "descricao": "País onde a mercadoria foi produzida",
+    "alias": ["Origem", "Origin", "País de origem", "Made in"]
+  },
+  {
+    "termo": "Payment Terms",
+    "tipo": "string",
+    "descricao": "Condições e prazos de pagamento",
+    "alias": ["Condições de pagamento", "Terms of Payment", "Forma de pago"]
+  }
+]
