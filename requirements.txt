@@ -1,4 +1,4 @@
-pyfastapi
+fastapi
 uvicorn
 python-multipart
 aiofiles

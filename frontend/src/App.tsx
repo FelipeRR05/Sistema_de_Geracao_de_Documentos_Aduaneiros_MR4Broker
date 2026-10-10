@@ -4,13 +4,14 @@ import ReviewPage from './ReviewPage'
 import TemplatesPage from './TemplatesPage'
 import ProcessesPage from './ProcessesPage'
 import ExtractionFieldsPage from './ExtractionFieldsPage'
+import ConferencePage from './ConferencePage'
 import { Toaster } from 'sonner'
-import { FileSearch, LayoutTemplate, Menu, X, Briefcase, Tag } from 'lucide-react'
+import { FileSearch, LayoutTemplate, Menu, X, Briefcase, Tag, Scale } from 'lucide-react'
 import logoBranca from './assets/logo_branca.png'
 
 function App() {
   const [extractionData, setExtractionData] = useState<any[] | null>(null);
-  const [activePage, setActivePage] = useState<'extracao' | 'processos' | 'modelos' | 'aliases'>('extracao');
+  const [activePage, setActivePage] = useState<'extracao' | 'processos' | 'modelos' | 'aliases' | 'conferencia'>('extracao');
   const [isSidebarOpen, setIsSidebarOpen] = useState(true);
   const [editingDocId, setEditingDocId] = useState<number | null>(null);
 
@@ -39,6 +40,9 @@ function App() {
     }
     if (activePage === 'aliases') {
       return <ExtractionFieldsPage />;
+    }
+    if (activePage === 'conferencia') {
+      return <ConferencePage />;
     }
 
     return !extractionData ? (
@@ -102,6 +106,15 @@ function App() {
           >
             <Tag size={20} />
             {isSidebarOpen && "Campos IA"}
+          </button>
+
+          <button
+            onClick={() => setActivePage('conferencia')}
+            className={`w-full flex items-center gap-4 p-4 rounded-xl transition-all font-bold uppercase text-xs tracking-widest
+              ${activePage === 'conferencia' ? 'bg-accent text-primary' : 'text-slate-400 hover:bg-white/5 hover:text-white'}`}
+          >
+            <Scale size={20} />
+            {isSidebarOpen && "Conferência"}
           </button>
         </nav>
       </div>

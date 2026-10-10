@@ -455,6 +455,29 @@ async def duplicate_template(id: int, db: Session = Depends(get_db)):
 async def generate_excel():
     return {"status": "ok", "message": "Excel Generation Endpoint Stub"}
 
+@app.post("/api/compare")
+async def compare_documents_endpoint(
+    instrucao_file: UploadFile = File(...),
+    draft_file: UploadFile = File(...)
+):
+    path1 = os.path.join(UPLOAD_DIR, instrucao_file.filename)
+    path2 = os.path.join(UPLOAD_DIR, draft_file.filename)
+    
+    async with aiofiles.open(path1, 'wb') as out_file:
+        await out_file.write(await instrucao_file.read())
+        
+    async with aiofiles.open(path2, 'wb') as out_file:
+        await out_file.write(await draft_file.read())
+        
+    try:
+        from extraction import compare_files
+        result = await compare_files(path1, path2)
+        return result
+    except Exception as e:
+        import traceback
+        print(f"Error in /api/compare: {traceback.format_exc()}")
+        raise HTTPException(status_code=500, detail=str(e))
+
 if __name__ == "__main__":
     import uvicorn
     uvicorn.run(app, host="0.0.0.0", port=8000)
